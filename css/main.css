@@ -7,20 +7,18 @@ body {
     font-weight: 400;
 }
 
-/* section */
-.section {
-    background-color: #ccc;
+.section {   
     width: 1220px;
     margin: 100px auto;
+    padding: 0 20px;
 }
 
-/* header */
 .header {
+    position: relative;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .header .gnb {
@@ -37,7 +35,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .header .extra {
@@ -46,23 +44,273 @@ body {
     margin-right: 30px;
 }
 
-/* main slider */
+/* mainSlide */
 .mainSlide {
     width: 1220px;
     height: 640px;
+    position: relative;    
     margin: 0 auto;
-    position: relative;
-    background-color: #ddd;
 }
 
 .mainSlide .textBox {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.mainSlide .textBox h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.mainSlide .textBox p {
+    margin: 10px 0 40px;
 }
 
 .mainSlide .photo {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 20px;
+}
+
+
+/* section-title */
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.section_title h4 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.section_title .arrows {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.section_title .arrows i {
+    width: 30px;
+    height: 30px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* section1 */
+.s1 {
+    display: flex;
+    gap: 20px;
+}
+
+.s1 .item {
+    width: 580px;
+    height: 580px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.s1 .item h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.s1 .item a {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 20px;
+}
+
+/* section2 */
+.s2 {}
+
+.s2 .section_items {}
+
+.s2 .section_items .item {}
+
+.s2 .section_items .item .thumb {
+    width: 280px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.s2 .section_items .item .titles {
+    padding: 20px 0;
+}
+
+.s2 .section_items .item .titles h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.s2 .section_items .item .titles p {
+    font-size: 14px;
+}
+
+/* section3 */
+.s3 {
+    display: flex;
+    gap: 20px;
+}
+
+.s3 .item .thumb{
+    width: 580px;
+    height: 360px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.s3 .item .thumb .user{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.s3 .item .thumb .user .photo{
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    border-radius: 100%;
+}
+
+.s3 .item .thumb .user .info .name{
+    font-size: 14px;
+}
+.s3 .item .thumb .user .info .job{
+    font-size: 10px;
+}
+
+/* section4 */
+.s4 .section_items {
+    overflow: hidden;
+}
+
+.s4 .section_items .item {
+    width: 380px;
+}
+
+.s4 .section_items .item .thumb{
+    width: 380px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.s4 .section_items .item .titles h4{
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+
+/* section5 */
+.s5 {
+    padding: 80px 0 70px;
+    text-align: center;
+}
+
+.s5 .text_box {}
+
+.s5 .text_box h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.s5 .text_box p {
+    margin: 30px auto 50px;
+    width: 42%;
+}
+
+.s5 .text_box a.btn {
+    margin: 0 auto;
+}
+
+/* footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+}
+
+.footer .section {
+    margin: 0 auto;
+    padding: 70px 0 90px;
+    position: relative;
+}
+
+.footer .section .sns {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+.f_menu > ul {
+    display: flex;
+    gap: 100px;
+}
+
+.f_menu > ul > li > a {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+}
+
+.f_menu > ul > li  ul a {
+    font-size: 13px;
+    padding: 10px;
+    display: block;
+    color: #ddd;
+}
+
+.f_menu > ul > li  ul a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 70px;
+}
+
+/* sns */
+.sns {
+    display: flex;
+    gap: 20px;
+
+}
+
+.sns a {
+    display: block;
+}
+
+.sns a i {
+    font-size: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #111;
 }

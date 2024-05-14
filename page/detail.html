@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>    
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul class="gnb">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../imgs/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="extra">
+                <a href="#"><img src="../imgs/icon_search.png" alt=""></a>                
+                <a href="#"><img src="../imgs/icon_shopping bag.png" alt=""></a>                
+            </div>
+        </div>
+
+        <div class="product section">
+            <div class="slide_container">
+
+                <div class="slide">
+                    <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
+                    <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
+                    <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
+                    
+                </div>
+                <div class="arrows">
+                    <i class="xi-arrow-left prev"></i>
+                    <i class="xi-arrow-right next"></i>
+                </div>
+            </div>
+            <div class="infos">
+                <div class="titles">
+                    <p class="category">Woman / Sneakers</p>
+                    <h3>나이키 테크 헤라</h3>
+                    <div class="size_title">
+                        <span>Select size</span>
+                        <a href="#">guide</a>
+                    
+                    </div>
+                </div>
+                <ul class="size">
+                    <li>5</li>
+                    <li>5.5</li>
+                    <li>6</li>
+                    <li>6.5</li>
+                    <li>7</li>
+                    <li>7.5</li>
+                    <li>8</li>
+                    <li>8.5</li>
+                    <li>9</li>
+                    <li>9.5</li>
+                    <li>10</li>
+                    <li>10.5</li>
+                    <li>11</li>
+                    <li>11.5</li>
+                    <li>12</li>
+                </ul>
+                <a href="#" class="btn">장바구니</a>
+            </div>
+        </div>
+
+        <div class="section s1"></div>
+
+        <div class="section s2"></div>       
+ 
+
+        <div class="footer">
+            <div class="section">
+                <div class="f_menu">
+                    <ul>
+                        <li>
+                            <a href="#">MY ACCOUNT</a>
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">주문조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">빠른 지원</a>
+                            <ul>
+                                <li><a href="#">배송 및 반품</a></li>
+                                <li><a href="#">환불정책</a></li>
+                                <li><a href="#">사이즈 가이드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                            <ul>
+                                <li><a href="#">나이키</a></li>
+                                <li><a href="#">언론 및 미디어</a></li>
+                                <li><a href="#">나이키 멤버십</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">새로운 소식</a>
+                            <ul>
+                                <li><a href="#">멤버 가입</a></li>
+                                <li><a href="#">매장 안내</a></li>
+                                <li><a href="#">나이키 저널</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    ©2023 Nike Wireframe Inc. All Rights Reserved.
+                </div>
+                <div class="sns">
+                    <a href="#"><i class="xi-facebook"></i></a>
+                    <a href="#"><i class="xi-instagram"></i></a>
+                    <a href="#"><i class="xi-twitter"></i></a>
+                    <a href="#"><i class="xi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.slide').slick({
+                autoplay : true,
+                autoplaySpeed : 4000,
+                dots : false,
+                nextArrow : ".next",
+                prevArrow : ".prev",
+            });
+        })
+    </script>
+</body>
+</html>
