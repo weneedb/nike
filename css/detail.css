@@ -1,3 +1,4 @@
+/* product */
 .product {
     display: flex;
     gap: 76px;
@@ -94,4 +95,63 @@
 
 .infos .btn {
     width: 524px;
+}
+
+/* section */
+.detail .s1 {
+    display: flex;
+    gap: 20px
+}
+
+.detail .s1 .item {
+    flex: 1;
+    height: 560px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail .s1 .item:first-child {
+    display: block;
+    background-color: transparent;
+}
+
+.detail .s1 .item:first-child .textBox {
+    padding: 90px 0;
+}
+
+.detail .s1 .item:first-child .textBox h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.detail .s1 .item:first-child .textBox p {
+    line-height: 1.6;
+}
+
+/* section2 */
+.detail .s2 .section_items .item .thumb {
+    width: 280px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.detail .s2 .section_items .item .titles {
+    padding: 20px 0;
+}
+
+.detail .s2 .section_items .item .titles h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.detail .s2 .section_items .item .titles p {
+    font-size: 14px;
 }

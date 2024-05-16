@@ -104,12 +104,12 @@ body {
 }
 
 /* section1 */
-.s1 {
+.main .s1 {
     display: flex;
     gap: 20px;
 }
 
-.s1 .item {
+.main .s1 .item {
     width: 580px;
     height: 580px;
     background-color: #111;
@@ -120,12 +120,12 @@ body {
     padding: 50px;
 }
 
-.s1 .item h3 {
+.main .s1 .item h3 {
     font-weight: 700;
     font-size: 32px;
 }
 
-.s1 .item a {
+.main .s1 .item a {
     display: flex;
     align-items: center;
     gap: 22px;
@@ -133,13 +133,7 @@ body {
 }
 
 /* section2 */
-.s2 {}
-
-.s2 .section_items {}
-
-.s2 .section_items .item {}
-
-.s2 .section_items .item .thumb {
+.main .s2 .section_items .item .thumb {
     width: 280px;
     height: 280px;
     background-color: #ddd;
@@ -150,33 +144,33 @@ body {
     font-size: 36px;
 }
 
-.s2 .section_items .item .titles {
+.main .s2 .section_items .item .titles {
     padding: 20px 0;
 }
 
-.s2 .section_items .item .titles h4 {
+.main .s2 .section_items .item .titles h4 {
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.s2 .section_items .item .titles p {
+.main .s2 .section_items .item .titles p {
     font-size: 14px;
 }
 
 /* section3 */
-.s3 {
+.main .s3 {
     display: flex;
     gap: 20px;
 }
 
-.s3 .item .thumb{
+.main .s3 .item .thumb{
     width: 580px;
     height: 360px;
     background-color: #ddd;
     position: relative;
 }
 
-.s3 .item .thumb .user{
+.main .s3 .item .thumb .user{
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -185,30 +179,31 @@ body {
     gap: 10px;
 }
 
-.s3 .item .thumb .user .photo{
+.main .s3 .item .thumb .user .photo{
     width: 40px;
     height: 40px;
     background-color: #111;
     border-radius: 100%;
 }
 
-.s3 .item .thumb .user .info .name{
+.main .s3 .item .thumb .user .info .name{
     font-size: 14px;
 }
-.s3 .item .thumb .user .info .job{
+
+.main .s3 .item .thumb .user .info .job{
     font-size: 10px;
 }
 
 /* section4 */
-.s4 .section_items {
+.main .s4 .section_items {
     overflow: hidden;
 }
 
-.s4 .section_items .item {
+.main .s4 .section_items .item {
     width: 380px;
 }
 
-.s4 .section_items .item .thumb{
+.main .s4 .section_items .item .thumb{
     width: 380px;
     height: 280px;
     background-color: #ddd;
@@ -219,31 +214,29 @@ body {
     font-size: 36px;
 }
 
-.s4 .section_items .item .titles h4{
+.main .s4 .section_items .item .titles h4{
     padding: 20px 0;
     font-weight: 700;
 }
 
 
 /* section5 */
-.s5 {
+.main .s5 {
     padding: 80px 0 70px;
     text-align: center;
 }
 
-.s5 .text_box {}
-
-.s5 .text_box h3 {
+.main .s5 .text_box h3 {
     font-weight: 700;
     font-size: 32px;
 }
 
-.s5 .text_box p {
+.main .s5 .text_box p {
     margin: 30px auto 50px;
     width: 42%;
 }
 
-.s5 .text_box a.btn {
+.main .s5 .text_box a.btn {
     margin: 0 auto;
 }
 

@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>    
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap detail">
         <div class="header">
             <ul class="gnb">
                 <li><a href="#">Women</a></li>
@@ -38,7 +38,7 @@
         <div class="product section">
             <div class="slide_container">
 
-                <div class="slide">
+                <div class="detail_slide_01">
                     <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
                     <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
                     <div class="item"><img src="../imgs/de_slide_img2.png" alt=""></div>
@@ -80,9 +80,100 @@
             </div>
         </div>
 
-        <div class="section s1"></div>
+        <!-- section1 -->
+        <div class="section s1">
+            <div class="item">
+            <div class="textBox">
+                <h3>러닝 목표를<br>
+                    설정해 보세요.</h3>
+            <p>얼굴에 스치는 바람이 느겨질 정도로 속도를 내고<br>
+                싶은순간이 있습니다. 러닝 숙련도에 따라 혹은 러닝 코스<br>
+                에, 목표에 맞는 러닝화를 만나보세요.</p>
+            </div>
+            </div>
 
-        <div class="section s2"></div>       
+            <div class="item">
+                1
+            </div>
+
+            <div class="item">
+                2
+            </div>
+
+
+
+        </div>
+
+        <!-- section2 -->
+        <div class="section s2">
+            <div class="section_title">
+                <h4>New Releases</h4>
+                <div class="arrows">
+                    <i class="xi-angle-left prev"></i>
+                    <i class="xi-angle-right next"></i>
+                </div>
+            </div>
+            <div class="section_items">
+                <div class="detail_slide_02">
+                    <div class="item">
+                        <div class="thumb">1</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">2</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">3</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">4</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">5</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">6</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">7</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">8</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>
+                            <p>남성 신발</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
  
 
         <div class="footer">
@@ -140,12 +231,21 @@
 
     <script>
         $(function(){
-            $('.slide').slick({
+            $('.detail_slide_01').slick({
                 autoplay : true,
                 autoplaySpeed : 4000,
                 dots : false,
-                nextArrow : ".next",
-                prevArrow : ".prev",
+                nextArrow : ".product .next",
+                prevArrow : ".product .prev",
+            });
+
+            $('.detail_slide_02').slick({
+                autoplay : true,
+                autoplaySpeed : 3000,
+                dots : false,
+                slidesToShow : 4,
+                nextArrow : ".detail .s2 .next",
+                prevArrow : ".detail .s2 .prev",
             });
         })
     </script>
