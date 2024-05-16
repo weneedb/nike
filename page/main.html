@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>    
 
 
 </head>
 <body>
     <div class="wrap main">
         <div class="header">
+            <div class="bars"><i class="xi-bars"></i></div>
             <ul class="gnb">
                 <li><a href="#">Woman</a></li>
                 <li><a href="#">man</a></li>
@@ -206,7 +208,8 @@
         <div class="section s5">
             <div class="text_box">
                 <h3>2023<br>국가대표팀 저지</h3>
-                <p>차세대 드라이 핏 ADV 기술로 더욱 강력해진 2023 대한민국 축구 국가대표팀 저지 스토리를 나이키 앱에서 만나 보세요.</p>
+                <p class="text">차세대 드라이 핏 ADV 기술로 더욱 강력해진 2023 대한민국 축구 국가대표팀 저지 스토리를 나이키 앱에서 만나 보세요.</p>
+                <p class="mText">차세대 드라이 핏 ADV 기술로 더욱<br> 강력해진 2023 대한민국 축구 국가대표팀 저지 스토리를<br> 나이키 앱에서 만나 보세요.</p>
                 <a href="#" class="btn">자세히 보기</a>
             </div>
         </div>
@@ -266,11 +269,17 @@
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             loop: true,
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 20,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+            769: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            },
             },
 
             // Navigation arrows
@@ -283,11 +292,17 @@
         const swiper2 = new Swiper('.swiper2', {
             // Optional parameters
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 20,
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+            769: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            },
             },
 
             // Navigation arrows
@@ -297,5 +312,14 @@
             },
         });
     </script>
+
+    <script>
+        $(".bars i").click(function(){
+            $(this).toggleClass("xi-close")
+            $(".bars").toggleClass("on")
+            $(".gnb").toggleClass("on")
+        })
+    </script>
+
 </body>
 </html>

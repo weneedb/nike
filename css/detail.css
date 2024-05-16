@@ -155,3 +155,8 @@
 .detail .s2 .section_items .item .titles p {
     font-size: 14px;
 }
+
+/* mob */
+@media (max-width: 768px) {
+    
+}
