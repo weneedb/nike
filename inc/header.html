@@ -1,0 +1,25 @@
+<div class="header">
+    <div class="bars"><i class="xi-bars"></i></div>
+    <ul class="gnb">
+        <li><a href="#">Woman</a></li>
+        <li><a href="#">man</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+    </ul>
+    <div class="logo">
+        <a href="../index.html"><img src="../imgs/logo.svg" alt="로고"></a>
+    </div>
+    <div class="extra">
+        <a href="#"><img src="../imgs/icon_search.png" alt="검색"></a>
+        <a href="#"><img src="../imgs/icon_shopping bag.png" alt="장바구니"></a>
+    </div>
+</div>
+
+<script>
+    $(".bars i").click(function(){
+        $(this).toggleClass("xi-close")
+        $(".bars").toggleClass("on")
+        $(".gnb").toggleClass("on")
+    })
+</script>
